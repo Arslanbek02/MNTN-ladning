@@ -1,0 +1,252 @@
+body{
+  font-family: 'Playfair Display', serif;
+  background: #001721 ;
+  background-image: url("../images/main-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/* links */
+i{
+  color: white;
+}
+.fa-user-circle{
+  padding-right: 8px;
+}
+a,p {
+  text-decoration: none;
+  color: white;
+  font-size: 14.5px;
+  line-height: 25.6px;
+}
+
+.main-page{
+  height: 920px;
+}
+
+/* scrollbar */
+.scrollbar{
+  z-index: 99;
+  position: fixed;
+  top: 45%;
+  transform: translateY(-50%);
+  right: 4%;
+}
+.scrollbar span{
+  margin-right: 20px;
+  font-weight: bold;
+}
+.scrollbar_link_list {
+  list-style-type: none;
+  flex-direction: column;
+}
+.scroll-link {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 200ms ease-in-out;
+  overflow: hidden;
+}
+.scroll-link::after{
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 50px;
+  background-color: #fff;
+  opacity: 0.5;
+  transition: opacity 200ms ease-in-out;
+}
+
+.scroll-link.scroll--current::after,
+.scroll-link:hover::after {
+opacity: 1;
+}
+
+/* Navigation */
+nav {
+  font-family:'Montserrat', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 1408px;
+  width: 91%;
+  margin: 51px 64px;
+  font-weight: bold;
+}
+.nav-right{
+  display: flex;
+  align-items: center;
+}
+.nav-item + .nav-item  {
+  padding-left: 32px;
+}
+.font-cr{
+  font-weight: bold;
+}
+#top-title{
+  font-family: 'Playfair Display', serif;
+  font-size: 25.6px;
+  line-height: 30.4px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize; 
+}
+.main-page{
+  display: flex;
+}
+
+/* SIDE LINKS */
+.sidenav{
+  font-family: 'Montserrat', sans-serif;
+  position: fixed;
+  top: 45%;
+  left: -1.5%;
+  width: 200px;
+  transform: rotate(90deg);
+}
+.side-item{
+  margin-left: 20px;
+  font-weight: bold;
+}
+.fab{
+  transform: rotate(-90deg);
+}
+.main-content{
+  margin: 0 auto;
+  margin: 90px 0 0 26%;
+  width: 760px;
+}
+.pre-title{
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  color: #FBD784;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 17.6px;
+}
+.inner-title{
+  font-style: normal;
+  font-weight: 480;
+  font-size: 70.4px;
+  line-height: 80px;
+  text-transform: capitalize;
+}
+
+.inline > .desc-title{
+  line-height: 17.6px;
+  font-weight: bold;
+  color: #FBD784;  
+}
+#scrl{
+  color: white;
+}
+
+.icon-right{
+  height: 12.8px;
+  width: 19.2px;
+  margin: 3px 0 0 10px;
+}
+.line{
+  border: 0;
+  height: 0;
+  border-top: 2px solid #FBD784;
+  width: 57.6px;
+  margin-right: 25.6px;
+}
+.inline{
+  display: inline-flex;
+  font-family: 'Montserrat', sans-serif;
+}
+#icon-down{
+  width: 12.8px;
+  height: 19.2px;
+  margin: 0 0 0 10px;
+}
+/* Content */
+.content{
+  margin: 0 auto;
+  width: 1170px;
+}
+.box-content{
+  display: flex;
+  height: 576px;
+  justify-content: space-between;
+}
+
+.section{
+  margin-top: 160px;
+}
+.section:first-child{
+  margin-top: 0;
+  padding-top: 60px;
+}
+
+/* BOX CONTENT */
+.box-num{
+  position: absolute;
+  z-index: -1;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 192px;
+  line-height: 192x;
+  color: #FFFFFF;
+  opacity: 0.1;
+}
+.box-num:nth-child(2){
+  left: 46%;
+}
+.box-text{
+  width: 505px;
+  height: 351px;
+  margin: 112px 120px;
+}
+#box-text-sc{
+  margin-right: 0px;
+}
+.box-title{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 51.2px;
+  line-height: 61.6px;
+}
+.box-inner{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+.box-img{
+  width: 453px;
+  height: 576px;
+}
+/* Footer */
+.footer{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 1170px;
+  margin-top: 160px;
+  margin-bottom: 80px;
+}
+.footer-uls{
+  display: flex;
+  width: 38.5%;
+  justify-content: space-between;
+}
+.ul-first-item{
+  font-size: 19.2px;
+  color: #FBD784;
+  font-weight: bold;
+}
+.footer-ul > li {
+  margin-bottom: 15px;
+}
+#copyright{
+  font-weight: 400;
+  opacity: 0.5;
+}
